@@ -20,6 +20,15 @@ class EventsController extends BaseController
     Hints:
     - open the `app/Http/Controllers/EventsController` file
     - partial or not working answers also get graded so make sure you commit what you have
+*/
+     //we can limit functions by using limit in querybuilder 
+  public function index()
+    {
+        return Event::all();
+    }
+
+/*
+
 
     Sample response on GET /events:
     ```json
