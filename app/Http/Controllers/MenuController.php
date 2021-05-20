@@ -8,6 +8,12 @@ use Illuminate\Routing\Controller as BaseController;
 
 class MenuController extends BaseController
 {
+
+     public function index()
+     {
+         return MenuItem::all();
+     }
+     
     /*
     Requirements:
     - the eloquent expressions should result in EXACTLY one SQL query no matter the nesting level or the amount of menu items.
