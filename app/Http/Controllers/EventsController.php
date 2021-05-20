@@ -22,12 +22,12 @@ class EventsController extends BaseController
     - partial or not working answers also get graded so make sure you commit what you have
 */
      //we can limit functions by using limit in querybuilder 
-  public function index()
+  public function getFutureEvents()
     {
         return Event::all();
     }
 
-    public function getfutureDates()
+    public function getFutureEventsWithWorkshops()
     {
         return Event::all()->andWhere('start >= NOW()');
     }
